@@ -44,6 +44,7 @@ dataset.
 ## Tech Stack
 
 - Python (refer to requirement.txt for the packages used in this project)
+- mlflow
 - Docker
 - Kubernetes
 - Devops
