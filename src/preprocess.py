@@ -156,10 +156,10 @@ def preprocess_data(DATA_PATH):
     pipe.fit_transform(df)
 
 
-    df.to_csv(DATA_PATH + "_processed.csv", index=False)
+    df.to_csv(DATA_PATH[:-4] + "_processed.csv", index=False)
 
 
 if __name__ == "__main__":
     DATA_PATH = os.path.abspath(sys.argv[1])
     preprocess_data(DATA_PATH)
-    print("Saved to {}".format(DATA_PATH + "_processed.csv"))
+    print("Saved to {}".format(DATA_PATH[:-4] + "_processed.csv"))
