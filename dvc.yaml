@@ -1,0 +1,8 @@
+stages:
+  preprocess:
+    cmd: python3 src/preprocess.py data/SCMS_Delivery_History_Dataset.csv
+    deps:
+    - data/SCMS_Delivery_History_Dataset.csv
+    - src/preprocess.py
+    outs:
+    - data/SCMS_Delivery_History_Dataset_processed.csv

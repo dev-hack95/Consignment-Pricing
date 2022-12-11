@@ -1,0 +1,15 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: python3 src/preprocess.py data/SCMS_Delivery_History_Dataset.csv
+    deps:
+    - path: data/SCMS_Delivery_History_Dataset.csv
+      md5: 75ada24f6df3870fda5fde6a2e24cdad
+      size: 3785904
+    - path: src/preprocess.py
+      md5: 289328df5ade9a9fdfddf10e9afb69b3
+      size: 6952
+    outs:
+    - path: data/SCMS_Delivery_History_Dataset_processed.csv
+      md5: ed9026cd783169d221fb9ed10343774b
+      size: 503407
