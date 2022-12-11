@@ -45,7 +45,7 @@ dataset.
 
 - Python (refer to requirement.txt for the packages used in this project)
 - MLflow
-- DVC
+- [DVC](https://github.com/dev-hack95/Consignment-Pricing/tree/dvc)
 - Docker
 - Kubernetes
 - Devops
