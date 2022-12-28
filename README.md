@@ -52,3 +52,67 @@ dataset.
 
 ## Quick glance at the results
 Correlation between the features.
+
+## Run Locally
+
+1) Initialize git
+
+```bash
+git init
+```
+
+
+2) Clone the project
+
+```bash
+git clone -b dvc https://github.com/dev-hack95/Consignment-Pricing
+```
+
+3) enter the project directory
+
+```bash
+cd Consigmrnt-Pricing
+```
+
+4) install the requriments
+
+```bash
+pip install -r requirements.txt
+```
+
+5) run application
+
+```bash
+streamlit run app.py
+```
+
+## RUN on docker
+
+
+1) Clone the project
+
+```bash
+git clone -b dvc https://github.com/dev-hack95/Consignment-Pricing
+```
+
+2) enter the project directory
+
+```bash
+cd Consigmrnt-Pricing
+```
+
+3) Build Docker image
+
+```bash
+docker build -f ./Dockerfile . -t myapp:latest
+```
+
+4) Run docker-compose
+```bash
+docker-compose up -d
+```
+
+5) Stop container
+```bash
+docker-compose down
+```
