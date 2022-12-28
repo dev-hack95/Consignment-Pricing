@@ -1,0 +1,7 @@
+version: '3'
+services:
+  consigment_price:
+    image: myapp:latest
+    container_name: myapp
+    ports:
+     - '8501:8501'
