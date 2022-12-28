@@ -5,7 +5,7 @@ import pickle
 model = pickle.load(open("./models/model.pkl", 'rb'))
 scaler = pickle.load(open("./models/scaler.pkl", 'rb'))
 st.write("""
-# Consiment Price Prediction
+# Consignment Price Prediction
 """)
 
 
