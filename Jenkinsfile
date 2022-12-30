@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout Code') {
       steps {
-        git(url: 'https://github.com/dev-hack95/Consignment-Pricing/tree/dvc', branch: 'dvc')
+        git(url: 'https://github.com/dev-hack95/Consignment-Pricing/', branch: 'dvc')
       }
     }
 
