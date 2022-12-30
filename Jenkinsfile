@@ -8,8 +8,8 @@ pipeline {
     stage('Checkout Code') {
       steps {
         git(url: 'https://github.com/dev-hack95/Consignment-Pricing/', branch: 'dvc')
+        }
       }
-    }
 
     stage('Log') {
       steps {
@@ -19,13 +19,13 @@ pipeline {
     stage('Deploy') {
       steps {
         sh 'docker build -f ./Dockerfile . -t myapp:latest'
+        }
       }
-    }
     stage('Run') {
       steps {
         sh 'docker-compose up -d'
+        }
       }
     }
   }
-}
 }
