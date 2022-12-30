@@ -1,5 +1,9 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'python:3.10'
+    }
+  }
   stages {
     stage('Checkout Code') {
       steps {
@@ -11,7 +15,16 @@ pipeline {
       steps {
         sh 'ls -la'
       }
+    
+    stage('Deploy') {
+      steps {
+        sh 'docker build -f ./Dockerfile . -t myapp:latest'
+      }
     }
-
+    stage('Run') {
+      steps {
+        sh 'docker-compose up -d'
+      }
+    }
   }
 }
