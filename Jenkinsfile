@@ -18,5 +18,12 @@ pipeline {
         sh 'docker build -f ./Dockerfile -t myapp:latest .'
       }
     }
+
+    stage('Run') {
+      steps {
+        sh 'docker-compose up -d'
+      }
+    }
+
   }
 }
