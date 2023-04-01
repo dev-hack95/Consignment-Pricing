@@ -7,7 +7,7 @@
 - [@dev-hack95](https://www.github.com/dev-hack95)
 
 ## Project Status
-- In Progress
+- Completed
 
 ## Table of Contents
 
